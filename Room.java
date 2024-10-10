@@ -19,6 +19,11 @@ public class Room {
         this.available = false;
     }
 
+    public void cancel() {
+        this.customerName = null;
+        this.available = true;
+    }
+
     public void showDetails() {
         System.out.println("Kamar Nomor: " + roomNumber);
         if (available) {
@@ -28,4 +33,3 @@ public class Room {
         }
     }
 }
-
